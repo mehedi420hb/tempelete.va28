@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?fc137de0d5647296728895d0fe6572b4") format("truetype"),
+url("./flaticon.woff?fc137de0d5647296728895d0fe6572b4") format("woff"),
+url("./flaticon.woff2?fc137de0d5647296728895d0fe6572b4") format("woff2"),
+url("./flaticon.eot?fc137de0d5647296728895d0fe6572b4#iefix") format("embedded-opentype"),
+url("./flaticon.svg?fc137de0d5647296728895d0fe6572b4#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "education": "\f101",
+    "agriculture": "\f102",
+    "personal": "\f103",
+    "loan": "\f104",
+    "loan-1": "\f105",
+    "loan-2": "\f106",
+    "loan-3": "\f107",
+);
+
+.flaticon-education:before {
+    content: map-get($flaticon-map, "education");
+}
+.flaticon-agriculture:before {
+    content: map-get($flaticon-map, "agriculture");
+}
+.flaticon-personal:before {
+    content: map-get($flaticon-map, "personal");
+}
+.flaticon-loan:before {
+    content: map-get($flaticon-map, "loan");
+}
+.flaticon-loan-1:before {
+    content: map-get($flaticon-map, "loan-1");
+}
+.flaticon-loan-2:before {
+    content: map-get($flaticon-map, "loan-2");
+}
+.flaticon-loan-3:before {
+    content: map-get($flaticon-map, "loan-3");
+}
